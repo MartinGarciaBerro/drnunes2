@@ -11179,57 +11179,59 @@ body {
       margin: 10px 0;
   }
 }
-    /* Estilo para el ícono de WhatsApp */
-    .whatsapp-icon {
-      position: fixed;
-      bottom: 20px; /* Espacio desde el fondo de la pantalla */
-      left: 20px; /* Espacio desde el lado izquierdo de la pantalla */
-      background-color: #25d366; /* Color verde de WhatsApp */
-      color: white;
-      padding: 20px; /* Tamaño del círculo */
-      border-radius: 50%; /* Hace que el ícono sea un círculo perfecto */
-      font-size: 30px; /* Tamaño del ícono */
-      width: 60px; /* Ancho fijo para asegurar que sea un círculo */
-      height: 60px; /* Altura fija igual al ancho */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
-      transition: background-color 0.3s ease; /* Transición para el color de fondo */
-  }
 
-  /* Efecto al pasar el mouse */
-  .whatsapp-icon:hover {
-    background-color: rgba(40, 40, 40, 1); /* Gris oscuro sin transparencia al hacer hover */
-    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
-  }
-
-/* Estilos para el botón de "Volver al Top" */
-.back-to-top {
+/* Estilo para el ícono de WhatsApp */
+.whatsapp-icon {
   position: fixed;
-  bottom: 20px; /* Posición desde el fondo */
-  right: 20px; /* Posición desde la derecha */
-  background-color: rgba(40, 40, 40, 0.7); /* Gris oscuro con transparencia */
+  bottom: 20px; /* Espacio desde el fondo de la pantalla */
+  right: 20px; /* Moverlo al lado derecho de la pantalla */
+  background-color: #25d366; /* Color verde de WhatsApp */
   color: white;
-  border-radius: 50%; /* Totalmente redondo */
-  width: 60px; /* Ancho fijo */
+  padding: 20px; /* Tamaño del círculo */
+  border-radius: 50%; /* Hace que el ícono sea un círculo perfecto */
+  font-size: 30px; /* Tamaño del ícono */
+  width: 60px; /* Ancho fijo para asegurar que sea un círculo */
   height: 60px; /* Altura fija igual al ancho */
-  font-size: 1.5rem;
-  display: none; /* Inicia oculto */
-  z-index: 1050; /* Asegura que esté por encima del navbar */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  text-align: center;
-  line-height: 60px; /* Centra el ícono verticalmente */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  transition: background-color 0.3s ease; /* Transición para el color de fondo */
 }
 
-.back-to-top:hover {
+/* Efecto al pasar el mouse */
+.whatsapp-icon:hover {
   background-color: rgba(40, 40, 40, 1); /* Gris oscuro sin transparencia al hacer hover */
   transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
 }
 
-/* Mostrar el botón cuando el usuario hace scroll */
+/* Estilos para el botón "Volver al Top" */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(40, 40, 40, 0.5); /* Más transparente */
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: none;
+  z-index: 1050;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 40px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: rgba(40, 40, 40, 0.8);
+  transform: scale(1.1);
+}
+
 .show {
   display: block;
 }
+
+
 
