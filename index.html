@@ -86,7 +86,7 @@
     <header class="masthead d-flex align-items-center">
       <div class="video-background">
         <iframe
-          src="https://www.youtube.com/embed/760fE7LIKs0?autoplay=1&loop=1&playlist=760fE7LIKs0&mute=1&controls=0&modestbranding=1&showinfo=0"
+          src="https://www.youtube.com/embed/1KtWFgC2Hdw?autoplay=1&loop=1&playlist=1KtWFgC2Hdw&mute=1&controls=0&modestbranding=1&showinfo=0"
           title="YouTube video background"
           frameborder="0"
           allow="autoplay; encrypted-media"
@@ -368,23 +368,25 @@
         }
       };
     </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        
-        navLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            const navbarCollapse = document.querySelector('#navbarNav');
-            
-            if (navbarCollapse.classList.contains('show')) {
-              navbarToggler.click();
+    <script>//RECARGA CELULAR//
+      function reloadVideoOnMobile() {
+        if (window.innerWidth <= 1024) {
+          // Detecta iPads y móviles (ajusta si es necesario)
+          document.addEventListener("visibilitychange", function () {
+            if (!document.hidden) {
+              let iframe = document.querySelector(".video-background iframe");
+              let src = iframe.src;
+              iframe.src = ""; // Se borra el src para forzar la recarga
+              iframe.src = src;
             }
           });
-        });
-      });
-    </script>
-
+        }
+      }
+      
+      reloadVideoOnMobile();
+      window.addEventListener("resize", reloadVideoOnMobile); // Se asegura de detectar cambios de tamaño
+      </script>
+      
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
