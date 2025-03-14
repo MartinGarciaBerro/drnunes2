@@ -116,4 +116,3 @@ document.addEventListener("DOMContentLoaded", () => {
   navbarCollapse.addEventListener("touchstart", resetCloseTimer);
 });
 
-
